@@ -155,9 +155,21 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent;
 }
 
-/* Canonical Golden Eagle Logo */
+/* Canonical Golden Eagle Logo & Dual Insignia */
+.brand-insignia {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.insignia-divider {
+  width: 1px;
+  height: 28px;
+  background: linear-gradient(180deg, transparent, rgba(207, 168, 88, 0.4), transparent);
+}
+
 .golden-eagle-logo {
-  height: 48px;
+  height: 46px;
   width: auto;
   object-fit: contain;
   filter: brightness(0) saturate(100%) invert(72%) sepia(30%) saturate(601%) hue-rotate(3deg) brightness(95%) contrast(86%) drop-shadow(0 0 10px rgba(207, 168, 88, 0.2));
@@ -167,6 +179,23 @@ h1, h2, h3, h4, h5, h6 {
 .golden-eagle-logo:hover {
   filter: brightness(0) saturate(100%) invert(72%) sepia(30%) saturate(601%) hue-rotate(3deg) brightness(110%) contrast(90%) drop-shadow(0 0 16px rgba(207, 168, 88, 0.45));
   transform: scale(1.04);
+}
+
+.festival-logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(207, 168, 88, 0.25));
+  transition: var(--transition-smooth);
+}
+
+.festival-logo:hover {
+  filter: drop-shadow(0 0 16px rgba(207, 168, 88, 0.5));
+  transform: scale(1.05);
+}
+
+.footer-festival-logo {
+  height: 48px;
 }
 
 /* --- Buttons --- */
